@@ -1,9 +1,27 @@
 Body {
-    background-color: aquamarine;
+    background-color: rgb(175, 204, 230);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     text-align: center;
-    color: rgb(15, 186, 69);
+    color: rgb(75, 55, 146);
+}
+
+.projects { display:flex; flex-wrap:wrap; }
+.project {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: rgb(148, 79, 169);
+    border-radius: 25%;
+}
+
+.project img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid rgb(123, 72, 157);
+    display: block;
+    margin: auto;
 }
