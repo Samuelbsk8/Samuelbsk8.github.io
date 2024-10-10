@@ -21,7 +21,5 @@ h1{
     width: 200px;
     height: 200px;
     margin: 10px;
-    border: 2px solid rgb(123, 72, 157);
-    display: block;
-    margin: auto;
+    border: 2px solid rgb(14, 53, 85)
 }
