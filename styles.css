@@ -24,20 +24,20 @@ h1{
     border: 2px solid rgb(14, 53, 85)
 }
 
-about{
+.about{
     display:flex;
     flex-wrap:wrap;
     margin-right: 100px;
     margin-left: 100px;
     justify-content: center;
     }
-    .about p {
+    .about p{
     width:50%;
     text-align: center;
     margin: auto;
     line-height: 125%;
     }
-    .about img {
+    .about img{
     width: 150px;
     height: 200px;
     border-radius: 25%;
