@@ -1,0 +1,43 @@
+/* Structure */
+body {
+    font-family :Arial, Helvetica, sans-serif;
+    background:url("images/background.jpg");
+    background-size:cover;
+}
+
+#content {
+    background: rgb(213, 213, 239);
+    width:70%;
+    margin:auto; /*center*/
+    padding:1%;  /*makes text spaced away from div edge*/
+    border-radius: 1%;
+}
+
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border:1px solid rgb(0, 9, 60);
+    padding :3px 5px;
+}
+
+th{
+    background:rgb(110, 110, 255)
+}
+
+/* Images */
+
+#Shark-pic{
+    box-shadow: 5px 5px black; 
+}
+
+/* Typography */
+h1 {
+    color:rgb(42, 74, 179);
+}
+h2 {
+    color: rgb(87, 98, 146);
+}
+
