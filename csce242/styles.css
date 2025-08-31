@@ -5,30 +5,70 @@ Body{
 }
 
 #Main{
-    background: #C2DFE3;
-    padding: 1%;
     margin:auto;
-    width: 70%;
+    padding:5px;
 }
 
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column {
+  background: #6e7e81;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  margin:10px;
+}
+img{
+  display: block;            
+  width: 100%;               
+  max-width: 300px;          
+  height: auto;              
+  aspect-ratio: 2 / 1;       
+  margin: auto;         
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
 /* Typography */
 h1 {
+    text-align:center;
     color:#253237;
 }
 
 h2 {
+    text-align:center;
     color:#5C6B73;
 }
 
 p{
+    text-align:center;
     color:#253237;
+    margin: 10px;
 }
 
 a{
     text-decoration:none;
-    color:#388dbb ;
+    color:#000000 ;
+    font-weight: bold;
+    font-size: larger;
+    margin :10px;
 }
 
-ol{
-    color:#388dbb ;
+@media only screen and (min-width: 768px) {
+    .columns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .column {
+    flex: 1; 
+    max-width: 25%;
+    margin:15px;
+  }
+   
+        
 }
