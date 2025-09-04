@@ -41,10 +41,21 @@ body {
 }
 
 #main-content-sidebar .columns {
-    width:100%;
+    width: 100%;
     justify-content: center;
-    padding:5px;
     margin:0;
+}
+
+.t-articles{
+    background:rgb(91, 217, 255);
+    padding: 5px;
+    margin: 2px;
+}
+
+.g-articles{
+    background:rgb(12, 86, 143);
+    padding: 5px;
+    margin: 2px;
 }
 
 #titles img{
@@ -184,6 +195,12 @@ footer{
         width:50%;
     }
 
+    #main-content-sidebar .columns {
+
+        width: 660px;
+        margin:0;
+        justify-content: left;
+    }
     
 
     #idea article section {
@@ -223,17 +240,13 @@ footer{
     }
 
     .t-articles {
-        background:rgb(91, 217, 255);
-        padding: 5px;
-        margin: 2px;
-        width:45%;
+        width:47%;
     }
 
     .g-articles {
         background:rgb(12, 86, 143);
-        padding: 5px;
-        margin: 2px;
-        width: 30%;
+        width: 210px;
+
     }
 
     #gallery .columns .wrap {
