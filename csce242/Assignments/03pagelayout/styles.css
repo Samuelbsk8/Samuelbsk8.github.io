@@ -236,7 +236,6 @@ footer{
 
     #gallery {
         flex:3;
-        width:30%
     }
 
     .t-articles {
@@ -249,9 +248,5 @@ footer{
 
     }
 
-    #gallery .columns .wrap {
-        margin:0;
-
-    }
 
 }    
