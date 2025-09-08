@@ -733,6 +733,26 @@ section {
         right:150px
     }
 
+    #section-five div{
+        display:flex;
+    }
+    #section-five img{
+        margin:0px;
+    }
+
+    #section-five p{
+        margin:0;
+    }
+
+    #section-six{
+        display: flex;
+        padding:0px
+    }
+
+    #section-six img{
+
+    }
+
     #footer-onehalf{
         display: flex;
         width:99%;
