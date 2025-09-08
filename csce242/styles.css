@@ -58,8 +58,10 @@ a{
     margin :10px;
 }
 
+
+
 @media only screen and (min-width: 768px) {
-    .columns {
+  .columns {
     flex-direction: row;
     justify-content: center;
   }
