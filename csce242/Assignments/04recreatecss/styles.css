@@ -648,36 +648,105 @@ section {
     }
 
     header h2{
-        text-align: right;
+        justify-content: right;
         width: fit-content;
     }
-
-
 
 
     /* Main Nav */
     #main-nav li{
         flex:1;
     }
-    #main-nav li, #main-nav li:first-child {
-        border:none;
-    }
 
     #main-nav a{
+        display: block;
         text-align: center;
-        padding:5px;
+        width: fit-content;
+        margin:0;
     }
 
-    #main-nav a:hover{
-        background:#874206;
-        color:white;
-        border-bottom:1px solid white;
+    #main-nav li {
+        display: block;
+        margin: auto;
+        width: fit-content;
+        border: none;
     }
 
-    #login-nav li:not(:last-child)::after {
-        content: "|";
-        color: white;
+    #main-nav li:first-child {
+        border-top:none;
     }
+
+    #main-nav ul{
+        background: var(--secondary-color);
+        height: 50px;
+        margin:0;
+    }
+
+    #main-nav ul li:last-child a{
+        padding: 0;
+    }
+
+    /* main-content */
+
+    #main-content{
+
+    }
+
+    #img-bigone{
+        height:600px;
+    }
+
+    #section-two{
+        padding:0px;
+    }
+
+    #section-two div{
+        width:50%;
+    }
+
+    #section-two img{
+        display: block;
+        height:500px;
+        width:50%;
+        margin:0;
+        justify-content: right;
+    }
+
+    #section-two h2{
+        margin:100px auto 12px auto;
+        padding:0px;
+        font-size:35px;
+    }
+
+    #section-two p{
+    }
+
+    #section-four img{
+        width:100%;
+        height:700px
+    }
+
+    #section-four div{
+        position :absolute;
+        width:40%;
+        top:2200px;
+        right:150px
+    }
+
+    #footer-onehalf{
+        display: flex;
+        width:99%;
+        margin:auto;
+    }
+    
+    #footer-onehalf #div-2{
+        margin:10px;
+    }
+
+
+
+
+    
 
     .hide-small {
         display:block;
