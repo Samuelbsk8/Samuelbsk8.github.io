@@ -1,0 +1,103 @@
+:root {
+    --primary-color:#684f3f;
+    --secondary-color:#7c6cd8;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #dfcca2;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-top: 20px;
+	color: var(--primary-color);
+    font-size: 50px;
+}
+
+h2 {
+	color: var(--secondary-color);
+	margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.columns {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	flex-wrap: wrap;
+}
+
+.columns #div-1,#div-2,#div-3 {
+	background-color: #f3e4bc;
+	border: 1px solid var(--primary-color);
+	height: fit-content;
+	padding: 15px;
+    width: 90%;
+}
+
+#color-picker{
+    display: block;
+    justify-content: left;
+}
+
+
+h3 {
+	color: var(--primary-color);
+	margin-bottom: 15px;
+    font-size:32px;
+}
+
+#lyrics{
+    width:90%;
+    border: none;
+    text-align: left;
+}
+
+p{
+    color: #874d2a;
+}
+
+#sun-1{
+    padding-left:10px;
+}
+
+#sun-2{
+    padding-left:20px;
+}
+
+#sun-3{
+    padding-left:30px;
+}
+
+#color-picker{
+    width:80px;
+    height:40px;
+    padding:4px;
+}
+
+#weather-img {
+    width :200px;
+    max-width: 100%;
+}
+
+
+footer h4 {
+	margin-top: 30px;
+	color: var(--primary-color);
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.columns {
+        gap:100px;
+	}
+
+	.columns #div-1,#div-2,#div-3 {
+		width: 20%;
+        height: 300px;
+	}
+
+}
