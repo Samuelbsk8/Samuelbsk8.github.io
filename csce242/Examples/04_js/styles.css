@@ -150,6 +150,21 @@ h2 {
     font-size: 1.2em;
 }
 
+.clicked {
+    background:magenta;
+    color:white;
+}
+
+.happy {
+    background:green;
+    color:white;
+}
+
+.sad {
+    background:blue;
+    color:white;
+}
+
 @keyframes fun {
     0% {
         background-color: red;
