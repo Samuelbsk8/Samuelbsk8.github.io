@@ -1,0 +1,140 @@
+:root {
+    /* Primary brand color */
+    --primary-color: #6f7460;   /* Olive gray-green */
+    
+
+    /* Neutrals */
+    --dark-color: #2c2d29;      /* Very dark gray-green */
+    --mid-neutral: #d9dbd2;     /* Soft gray-beige */
+    --light-color: #f7f7f5;     /* Almost white */
+
+    /* Accent colors */
+    --accent-tan: #a07f5a;      /* Warm earthy tan */
+    --accent-sage: #9fb39c;     /* Muted sage green */
+    --accent-rust: #c76d4a;     /* Rusty orange/red */
+    --accent-darkrust: #9a3f25;
+}
+
+body {
+    color: var(--dark-color); /* dark neutral */
+    background: #f7f7f5; 
+    width: 100%;
+    margin:0;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color); /* brand color */
+    font-family: Times, 'Times New Roman', serif;
+}
+
+h4, h5, h6 {
+    color: var(--accent-tan); /* accent tan */
+    font-family: Verdana, sans-serif;
+}
+
+a {
+    color: var(--accent-rust); /* rust for links */
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+a:hover {
+    color: var(--accent-darkrust); /* darker rust on hover */
+}
+
+
+
+.columns{
+    display: flex;
+}
+
+/* header */
+
+header{
+    background: var(--primary-color);
+    width:100vw;
+}
+
+#header-contact{
+    background:var(--dark-color);
+    justify-content: right;
+    padding-right:5%;
+}
+
+#header-contact a{
+    text-align: center;
+    padding:0 20px 0 20px;
+    font-size: .8vw;
+    margin:2px 0;
+
+}
+
+#header-contact a:first-child{
+    border-right: 1px solid var(--accent-rust);
+}
+
+#main-header{
+    justify-content: center;
+    display: flex;
+    align-items: center;   /* aligns logo + text to same baseline */
+    gap: 20px;  
+}
+
+#main-header-h{
+    display: block;
+}
+
+#header-h1{
+    margin:auto 0;
+    font-size: 5vw;
+    color:var(--dark-color);
+}
+#header-h2{
+    margin:0;
+    text-align: center;
+    font-size: 2.5vw;
+    color:var(--dark-color);
+}
+
+header img{
+    width:80px;
+}
+
+#main-nav {
+    justify-content: center;
+    background:var(--dark-color);
+}
+
+#main-nav a{
+    text-align: center;
+    padding:10px 40px 10px 40px;
+    font-size: 1.3vw;
+}
+
+#main-nav a:last-child{
+    border-right:none;
+}
+
+/* home-first-look */
+
+#home-first-look{
+    background-image: url(images/cover.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#home-first-look img{
+    width:200px;
+    margin:150px;
+}
+
+
+/* contact */
+
+#contact{
+    background:var(--dark-color);
+    width:100%;
+}
+
+
