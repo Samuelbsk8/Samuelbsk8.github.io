@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <!--Samuel Britton-->
-<link rel="stylesheet" href="styles.css">
 
-<html>
+
+<html lang="en">
     
-
     <head>
+        <meta charset="UTF-8">
         <title>MAVDOG K-9 Training</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     </head>
 
     <body>
 
         <header>
             <nav id="header-contact" class="columns">
-                <a href="#">(555)-555-5555</a>
-                <a href="#">MAVDOG_K-9@email.com</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> (555)-555-5555</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> MAVDOG_K-9@email.com</a>
             </nav>
 
             <div id="main-header" class="columns">
@@ -41,8 +43,41 @@
         </section>
 
         <section id="contact">
-            
+            <div class="columns">
+                <div id="contact-form">
+                    <h2>Contact Form:</h2>
+                    <form method="POST">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <div id="number-email" class="columns">
+                            <input type="number" id="number" placeholder="Phone number" required>
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        <div id="contact-button">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form> 
+                </div>
+                <div id="contact-info">
+                    <h2>Contact Info:</h2>
+                    <h3><i class="fa-solid fa-phone"></i> MAVDOG K-9 Local:</h3>
+                    <a href="https://maps.app.goo.gl/J2DF2CKKUSzXoxRC9" target="_blank">Columbia, SC 29223</a>
+                    <h3><i class="fa-solid fa-envelope"></i> Phone Number:</h3>
+                    <a href="#">(555)-555-5555</a>
+                    <h3><i class="fa-solid fa-house"></i> Email Address:</h3>
+                    <a href="#">MAVDOG_K-9@email.com</a>
+                </div>
+            </div>
         </section>
+
+        <footer class="columns">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </footer>
 
 
 
