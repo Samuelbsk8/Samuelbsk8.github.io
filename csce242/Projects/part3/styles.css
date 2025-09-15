@@ -1,15 +1,10 @@
-:root {
-    /* Primary brand color */
-    --primary-color: #6f7460;   
-    
 
-    /* Neutrals */
+:root {
+    --primary-color: #6f7460;   
     --dark-color: #2c2d29;      
     --mid-neutral: #d9dbd2;     
     --light-color: #f7f7f5; 
     --light-green: #bfc077;    
-
-    /* Accent colors */
     --accent-tan: #a07f5a;      
     --accent-sage: #9fb39c;     
     --accent-rust: #c76d4a;     
@@ -19,6 +14,7 @@
 * {
     box-sizing: border-box;
 }
+
 body, html {
     margin: 0;
     padding: 0;
@@ -31,7 +27,7 @@ h1, h2, h3 {
     font-family: Verdana, sans-serif;
 }
 
-h4, h5, h6, p{
+h4, h5, h6, p {
     color: var(--dark-color); 
     font-family: Verdana, sans-serif;
 }
@@ -45,367 +41,331 @@ a:hover {
     color: var(--accent-darkrust); 
 }
 
-
-.columns{
+.columns {
     display: flex;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
 /* header */
-
-header{
+header {
     background: var(--primary-color);
     width:100vw;
 }
 
-#header-contact{
+#header-contact {
     background:var(--dark-color);
     justify-content: right;
     padding-right:5%;
 }
 
-#header-contact a{
+#header-contact a {
     text-align: center;
-    padding:0 20px 0 20px;
-    font-size: .8vw;
+    font-size: 2vw;
     margin:2px 0;
-
+    padding:0 20px;
 }
-
-#header-contact a:first-child{
+#header-contact a:first-child {
     border-right: 1px solid var(--accent-rust);
 }
 
-#main-header{
+#main-header {
     justify-content: center;
     display: flex;
     align-items: center;   
     gap: 20px;  
 }
-
-#main-header-h{
+#main-header-h {
     display: block;
 }
-
-#header-h1{
+#header-h1 {
     margin:auto 0;
     font-size: 5vw;
-    color:var(--dark-color);
 }
-#header-h2{
+#header-h2 {
     margin:0;
     text-align: center;
     font-size: 2.5vw;
-    color:var(--dark-color);
 }
-
-header img{
+header img {
     width:80px;
 }
 
 #main-nav {
     justify-content: center;
     background:var(--dark-color);
+    flex-direction: column;
+    align-items: center;
 }
-
-#main-nav a{
+#main-nav a {
     text-align: center;
-    padding:10px 40px 10px 40px;
-    font-size: 1.3vw;
-}
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--accent-rust);
+    width: 100%;
 
-#main-nav a:last-child{
-    border-right:none;
+}
+#main-nav a:last-child {
+    border-bottom: none;
 }
 
 /* home-first-look */
-
-#home-first-look{
+#home-first-look {
     background-image: url(images/cover.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-#home-first-look img{
+#home-first-look img {
     width:200px;
     margin:150px;
 }
 
 /* About */
-#about{
+#about {
     margin:30px;
     background:var(--light-green);
-    padding:80px 100px;
+    padding:20px;
     border-radius: 5px;
+    flex-direction: column;
 }
-
-#about-div{
-    width:50%;
-    padding-right:50px;
+#about-div, #harra-laydown {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
 }
-
-#about-div h3{
+#about-div h3 {
     margin-top:0;
     padding-top:10px;
     border-top: 1px solid var(--dark-color);
 }
-
-#about-div h2{
+#about-div h2 {
     margin-top:10px;
 }
-
-#about-div img{
+#about-div img {
     width:80px;
 }
-
-#about div p{
-    font-size: 1.15vw;
+#about div p {
+    font-size: 2.5vw;
 }
-
-#about-div a{
+#about-div a {
     display: block;
     background: var(--dark-color);
     color:var(--light-green);
     border:2px solid var(--mid-neutral);
     padding: 12px;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     border-radius: 10px;
     width: fit-content;
-    margin-top: 20px;
+    margin:20px auto 0 auto;
 }
-
-#about-div a:hover{
+#about-div a:hover {
     background: var(--light-green);
     color: var(--dark-color);
     border-color: var(--dark-color);
 }
-
-#harra-laydown{
-    margin:0 auto;
-    width:550px;
+#harra-laydown {
     border: 3px solid var(--dark-color);
     border-radius: 5px;
 }
 
-/* training-types */
-
-#services h1{
+/* Services */
+#services h1 {
     text-align: center;
     color:var(--accent-rust);
     border-bottom: 2px solid var(--accent-rust);
     width: fit-content;
     margin: 0 auto 10px auto;
-
 }
-
-#s-main-div{
+#s-main-div {
     justify-content: center;
     margin-bottom:30px;
+    flex-direction: column;
 }
-
-#inner-s-div{
+#inner-s-div {
     padding: 40px 0;
     background: var(--accent-rust);
-    width:25%;
+    width:80%;
     aspect-ratio: 1/1;
     text-align: center;
-    border-right:1px solid var(--mid-neutral);
+    border-bottom:1px solid var(--mid-neutral);
+    margin:auto;
 }
-
-#inner-s-div:last-child{
-    border-right:none;
+#inner-s-div:last-child {
+    border-bottom:none;
 }
-
-
-
 #inner-s-div:hover {
-  background: var(--dark-color); /* whole box background */
+    background: var(--dark-color);
 }
-
 #inner-s-div:hover h2,
 #inner-s-div:hover p {
-  color: var(--accent-rust); /* only text color */
+    color: var(--accent-rust);
 }
 
 /* Portfolio */
-#pf-intro{
+
+#pf-cover-img h1{
+    display: block;
+    text-align: center;
+    color: var(--dark-color);
+    font-size: 15vw;
+    margin:auto;
+}
+#pf-intro {
     background:var(--accent-tan);
     padding:40px;
 }
-
-#pf-intro #logo{
+#pf-intro #logo {
     display: block;
     width:150px;
     margin:auto;
 }
-
-#pf-intro h1{
+#pf-intro h1 {
     display:block;
     margin: 10px auto;
     width:fit-content;
-    
     color: var(--light-color);
 }
 
-#pf-intro div{
+
+#pf-intro div {
     width: 100%;
     justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
-
-#pf-intro div img{
-    width: 20%;
+#pf-intro div img {
+    width: 100%;
 }
-
-#pf-intro a{
+#pf-intro a {
     display: block;
     background: var(--dark-color);
     color:var(--accent-tan);
     border:2px solid var(--mid-neutral);
     padding: 12px;
-    font-size: 1.5vw;
+    font-size: 3vw;
     border-radius: 10px;
     width: fit-content;
     margin: 20px auto;
-    
 }
-
-#pf-intro a:hover{
+#pf-intro a:hover {
     background: var(--accent-tan);
     color:var(--dark-color);
     border-color: var(--dark-color);
 }
 
 /* contact */
-
-#contact{
+#contact {
     background:var(--primary-color);
     width:100%;
     padding: 50px;
     text-align: center;
+    flex-direction: column;
 }
-
-#contact-form{
-    text-align: left;
-    width: 70%;
-    padding: 0 40px;
+#contact-form, #contact-info {
+    width: 100%;
+    padding: 10px;
     color: var(--mid-neutral);
 }
-
-#contact-info{
-    text-align: left;
+#contact-form h2 {
+    text-align: center;
+    font-size:5vw;
+    border-bottom: 1px solid var(--mid-neutral);
+    color:var(--mid-neutral)
+}
+#contact-info {
+    text-align: center;
     color: var(--mid-neutral);
     margin:0 auto;
 }
-
-#contact-info h2, #contact-info h3, #contact-info h4, #contact-info a{
+#contact-info h2 {
+    font-size:5vw;
+    border-bottom: 1px solid var(--mid-neutral);
+}
+#contact-info h2, #contact-info h3, #contact-info h4, #contact-info a {
     color: var(--mid-neutral);
 }
-
-#contact-info a:hover{
+#contact-info a:hover {
     color: var(--dark-color);
 }
-
-#contact-info h4,a{
+#contact-info h4,a {
     padding-left:20px;
 }
-
-#number-email{
+#number-email {
     gap:10px;
 }
-
-#number-email input{
+#number-email input {
     width :50%;
 }
-
-
-#contact h2 {
-    margin-bottom: 20px;
-    color: var(--text-heading);
-}
-
 form {
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-
 label {
     text-align: left;
     font-weight: bold;
     color: var(--dark-color);
 }
-
 input, textarea {
     padding: 16px;
     border: 2px solid var(--color-primary);
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 4vw;
 }
-
 button {
     background: var(--dark-color);
     color:var(--primary-color);
     border:2px solid var(--mid-neutral);
     padding: 12px;
-    font-size: 1.3vw;
+    font-size: 2vw;
     border-radius: 10px;
     width: fit-content;
     margin-top: 20px;
 }
-
-#contact-button{
+#contact-button {
     text-align: right;
 }
-
 button:hover {
     background: var(--primary-color);
     color: var(--dark-color);
     border-color: var(--dark-color);
 }
 
-
 /* footer */
-
-footer{
+footer {
     background: var(--dark-color);
     justify-content: center;
     padding: 10px;
-    font-size: 1vw;
+    font-size: 2vw;
 }
-
-footer a{
-    padding:0 30px;
+footer a {
+    padding:0 25px;
     border-right: 1px solid var(--accent-rust);
 }
+footer a:last-child {
+    border:none;
+}
 
-
-
-/* Portfolio Page*/
-
-
-#pf-cover-img{
-    background-image: url(https://dummyimage.com/2000x400/2fe0ae/000000&text=Portfolio);
+/* Portfolio Page */
+#pf-cover-img {
+    background-image:url(images/MavandKoda.jpg);
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #pf-content {
   padding: 50px;
   width: 90%;
-  column-count: 3;
+  column-count: 1;
   column-gap: 10px;
   margin: auto;
 }
-
 #pf-content img {
   width: 100%; 
   height: auto;  
@@ -413,10 +373,97 @@ footer a{
   margin-bottom: 10px;
 }
 
+/* Desktop */
+@media (min-width: 768px) {
+    #header-contact a {
+        font-size: .8vw;
+    }
+    #main-nav {
+        flex-direction: row;
+    }
+    #main-nav a {
+        padding:10px 40px;
+        font-size: 1.3vw;
+        border:none;
+        width:fit-content;
+    }
+    #about {
+        flex-direction: row;
+        padding: 80px 100px;
+    }
+    #about-div {
+        width: 50%;
+        padding-right: 50px;
+    }
+    #about-div a {
+        margin:0;
+        font-size: 1.5vw;
+    }
+    #about div p {
+        font-size: 1.15vw;
+    }
+    #harra-laydown {
+        margin:0 auto;
+        width:550px;
+    }
+    #s-main-div {
+        flex-direction: row;
+    }
+    #inner-s-div {
+        width: 25%;
+        border-right: 1px solid var(--mid-neutral);
+        border-bottom: none;
+    }
+
+    #pf-cover-img{
+        padding:10px 0;
+    }
+
+    #pf-cover-img h1{
+        display: block;
+        text-align: center;
+        color: var(--dark-color);
+        font-size: 15vw;
+        margin:auto;
+    }
 
 
-
-
-
-
-
+    #pf-intro div {
+        flex-direction: row;
+    }
+    #pf-intro div img {
+        width: 20%;
+    }
+    #pf-content {
+        column-count: 3;
+    }
+    #pf-intro a {
+        font-size: 1.5vw;
+    }
+    #contact {
+        flex-direction: row;
+    }
+    #contact-form {
+        text-align: left;
+        width: 70%;
+        padding: 0 40px;
+    }
+    #contact-info {
+        width: 30%;
+        text-align: left;
+    }
+    #contact-info h2, #contact-form h2 {
+        font-size: 1.5vw;
+        border-bottom: 1px solid var(--mid-neutral);
+        text-align: left;
+    }
+    input, textarea {
+        font-size: 1.3vw;
+    }
+    button {
+        font-size: 1.3vw;
+    }
+    footer a {
+        font-size: 0.8vw;
+    }
+}
