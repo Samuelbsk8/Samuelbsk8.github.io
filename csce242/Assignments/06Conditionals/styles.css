@@ -1,0 +1,111 @@
+:root{
+    --primary-color:#34495e;
+    --secondary-color:#ffffff;
+    --tertiary-color:#182b3e;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--tertiary-color);
+    padding: 10px 20px;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#arrow.open {
+    transform: rotate(180deg);
+}
+
+#menu-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin:0;
+    list-style: none;
+}
+
+#menu-items.show {
+    display: flex;
+}
+
+#menu-items li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 8px 0;
+}
+
+#menu-items li a:hover {
+    cursor: pointer;
+    color: #1abc9c;
+}
+
+.content-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    max-width: 500px;
+}
+
+.hidden {
+    display: none;
+}
+
+#plantImage {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+#clock {
+    font-size: 2rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu-items {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Pipe separators */
+    #menu-items li:not(:last-child)::after {
+        content: "|";
+        margin-left: 20px;
+        color: var(--secondary-color);
+    }
+    
+}

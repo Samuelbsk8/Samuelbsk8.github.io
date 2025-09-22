@@ -131,6 +131,8 @@ header img {
     padding:20px;
     border-radius: 5px;
     flex-direction: column;
+    flex-wrap: wrap;
+
 }
 #about-div, #harra-laydown {
     width: 100%;
@@ -373,6 +375,10 @@ footer a:last-child {
   margin-bottom: 10px;
 }
 
+@media (min-width: 1360){
+
+}
+
 /* Desktop */
 @media (min-width: 768px) {
     #header-contact a {
@@ -466,4 +472,9 @@ footer a:last-child {
     footer a {
         font-size: 0.8vw;
     }
+}
+
+
+@media (min-width: 1360){
+
 }
