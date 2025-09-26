@@ -217,57 +217,6 @@ header img {
     color: var(--accent-rust);
 }
 
-/* Portfolio */
-
-#pf-cover-img h1{
-    display: block;
-    text-align: center;
-    color: var(--dark-color);
-    font-size: 15vw;
-    margin:auto;
-}
-#pf-intro {
-    background:var(--accent-tan);
-    padding:40px;
-}
-#pf-intro #logo {
-    display: block;
-    width:150px;
-    margin:auto;
-}
-#pf-intro h1 {
-    display:block;
-    margin: 10px auto;
-    width:fit-content;
-    color: var(--light-color);
-}
-
-
-#pf-intro div {
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-}
-#pf-intro div img {
-    width: 100%;
-}
-#pf-intro a {
-    display: block;
-    background: var(--dark-color);
-    color:var(--accent-tan);
-    border:2px solid var(--mid-neutral);
-    padding: 12px;
-    font-size: 3vw;
-    border-radius: 10px;
-    width: fit-content;
-    margin: 20px auto;
-}
-#pf-intro a:hover {
-    background: var(--accent-tan);
-    color:var(--dark-color);
-    border-color: var(--dark-color);
-}
 
 /* contact */
 #contact {
@@ -363,8 +312,59 @@ footer a:last-child {
     border:none;
 }
 
-/* Portfolio Page */
+/* Portfolio */
+
+#pf-cover-img h1{
+    text-align:center;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--dark-color);
+    font-size: 15vw;
+    margin:auto;
+}
+
+#pf-intro {
+    background:var(--accent-tan);
+    padding:40px;
+}
+#pf-intro #logo {
+    display: block;
+    width:150px;
+    margin:auto;
+}
+#pf-intro h1 {
+    display:block;
+    margin: 10px auto;
+    width:fit-content;
+    color: var(--light-color);
+}
+#pf-intro div {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#pf-intro div img {
+    width: 100%;
+}
+#pf-intro a {
+    display: block;
+    background: var(--dark-color);
+    color:var(--accent-tan);
+    border:2px solid var(--mid-neutral);
+    padding: 12px;
+    font-size: 3vw;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+#pf-intro a:hover {
+    background: var(--accent-tan);
+    color:var(--dark-color);
+    border-color: var(--dark-color);
+}
 #pf-cover-img {
+    display: flex;
     background-image:url(images/MavandKoda.jpg);
     height: 400px;
     background-position: center;
@@ -384,6 +384,7 @@ footer a:last-child {
   display: block;
   margin-bottom: 10px;
 }
+
 
 /* Desktop */
 @media (min-width: 768px) {
@@ -455,7 +456,9 @@ footer a:last-child {
     #pf-cover-img h1{
         display: block;
         text-align: center;
-        color: var(--dark-color);
+        color: transparent;
+        -webkit-text-stroke-width: 10px;
+        -webkit-text-stroke-color: var(--accent-rust);
         font-size: 15vw;
         margin:auto;
     }
