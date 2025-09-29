@@ -42,4 +42,5 @@ document.getElementById("btn-draw-scene").onclick = () => {
         tree.append(trunk);
         treesDiv.append(tree);
     }
+    
 };
