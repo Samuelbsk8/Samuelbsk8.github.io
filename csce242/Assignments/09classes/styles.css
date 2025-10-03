@@ -116,3 +116,25 @@ header h2 {
     font-size: 22px;
     color: var(--accent-color);
 }
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;   /* full width on phones */
+    }
+
+    #popup{
+        width:80%;
+    }
+
+    .popup-content {
+        width: 95%;   /* nearly full width */
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .popup-content img {
+        max-height: 50vh;  /* keep images from being too tall */
+        object-fit: contain;
+    }
+
+}
