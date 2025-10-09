@@ -447,15 +447,31 @@ footer a:last-child {
 
 /* Testimonials */
 
+#testimonials-section h1{
+    color: var(--accent-tan);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-top: 2px solid var(--accent-tan);
+    border-bottom: 2px solid var(--accent-tan);
+}
+
+#testimonials-container{
+    flex-wrap: wrap;
+}
+
 .testimonial-card {
-    background: var(--light-green);
+    background: var(--accent-sage);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     text-align: center;
+    width:100%;
+
 }
+
 .testimonial-card img {
-    width: 150px;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -471,9 +487,8 @@ footer a:last-child {
         display: none;
     }
 
-    /* Force nav to show on desktop */
     #main-nav {
-        display: flex !important;  /* override mobile 'display: none' or 'show' toggle */
+        display: flex !important;  
         flex-direction: row;
         justify-content: center;
         background: var(--dark-color);

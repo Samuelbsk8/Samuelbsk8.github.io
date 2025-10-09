@@ -6,7 +6,7 @@ hamburger.onclick = () => {
 };
 
 document.querySelectorAll('#pf-content img').forEach(img => {
-    img.style.cursor = 'pointer'; // make it look clickable
+    img.style.cursor = 'pointer'; 
     img.addEventListener('click', () => {
         window.location.href = 'testimonials.html';
     });

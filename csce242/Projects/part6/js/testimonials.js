@@ -1,6 +1,6 @@
 // Fetch the testimonials JSON
 const getTestimonials = async () => {
-    const url = "https://github.com/Samuelbsk8/Samuelbsk8.github.io/blob/main/csce242/Projects/part6/json/testimonials.json"; 
+    const url = "https://raw.githubusercontent.com/Samuelbsk8/Samuelbsk8.github.io/refs/heads/main/csce242/Projects/part6/json/testimonials.json"; 
     
     try {
         const response = await fetch(url);
