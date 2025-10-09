@@ -6,7 +6,7 @@
     "stars": 5,
     "review": "Harra learned basic obedience so quickly! The trainers were patient and professional.",
     "training_type": "Board & Train",
-    "img_name": "images/harra-laydown.JPG"
+    "img_name": "images/harra-laydown.jpg"
   },
   {
     "_id": 2,
@@ -24,7 +24,7 @@
     "stars": 5,
     "review": "The virtual consultation was amazing! I could see results immediately.",
     "training_type": "Virtual Consultation",
-    "img_name": "images/max.JPG"
+    "img_name": "images/max.jpg"
   },
   {
     "_id": 4,
@@ -33,7 +33,7 @@
     "stars": 5,
     "review": "Bella's behavior has improved tremendously. The trainers really care!",
     "training_type": "Boarding",
-    "img_name": "images/bella.JPG"
+    "img_name": "images/bella.jpg"
   },
   {
     "_id": 5,
@@ -42,7 +42,7 @@
     "stars": 4,
     "review": "Charlie learned agility skills quickly and had fun throughout!",
     "training_type": "Board & Train",
-    "img_name": "images/charlie.JPG"
+    "img_name": "images/charlie.jpg"
   },
   {
     "_id": 6,
@@ -51,7 +51,7 @@
     "stars": 5,
     "review": "Rocky is so much more confident now. Excellent trainers.",
     "training_type": "Private Sessions",
-    "img_name": "images/rocky.JPG"
+    "img_name": "images/rocky.jpg"
   },
   {
     "_id": 7,
@@ -60,7 +60,7 @@
     "stars": 5,
     "review": "The Board & Train program was perfect for Luna. Can't recommend enough!",
     "training_type": "Board & Train",
-    "img_name": "images/luna.JPG"
+    "img_name": "images/luna.jpg"
   },
   {
     "_id": 8,
@@ -69,6 +69,6 @@
     "stars": 4,
     "review": "Scout learned new tricks fast, trainers were super helpful and friendly.",
     "training_type": "Virtual Consultation",
-    "img_name": "images/scout.JPG"
+    "img_name": "images/scout.jpg"
   }
 ]
