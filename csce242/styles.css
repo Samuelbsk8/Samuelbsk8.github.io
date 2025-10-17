@@ -49,6 +49,17 @@ p {
   margin: 10px;
 }
 
+#server a{
+  text-decoration: underline;
+}
+
+#server h3{
+  color: #000000;
+  font-weight: bold;
+  font-size: larger;
+  margin: 0 auto;
+  width:fit-content;
+}
 
 
 a {
