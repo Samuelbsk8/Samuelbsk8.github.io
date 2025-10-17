@@ -95,18 +95,26 @@
         <section id="contact" class="columns">
             <div id="contact-form">
                 <h2>Contact Form:</h2>
-                <form method="POST">
+                <form id="form" method="POST">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
                     <input type="text" id="name" name="name" placeholder="Name" required>
+
                     <div id="number-email" class="columns">
-                        <input type="tel" id="number" placeholder="Phone number" required>
-                        <input type="email" id="email" placeholder="Email Address" required>
+                        <input type="tel" id="number" name="number" placeholder="Phone number" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
                     </div>
+
                     <input type="text" id="subject" name="subject" placeholder="Subject" required>
                     <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+
                     <div id="contact-button">
                         <button type="submit">Send Message</button>
                     </div>
-                </form> 
+                </form>
+                <div id="result"></div>
+
+                
             </div>
             <div id="contact-info">
                 <h2>Contact Info:</h2>
